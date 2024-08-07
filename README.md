@@ -215,7 +215,7 @@ To github.com:daoyandex/Homework-8-01-Git.git
 user@debian:~/HW-8-01-Git$ 
 
 ```
-[.gitignore commit](https://github.com/netology-code/sys-pattern-homework/commit/1541074284a6f2d384c816a5a8de9aad6ecc0263)
+[.gitignore commit](https://github.com/daoyandex/Homework-8-01-Git/commit/51c00342d5ceaa67850bb6add8d8df6063c1253b)
 
 
 ---
