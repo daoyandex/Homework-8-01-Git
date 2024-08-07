@@ -140,6 +140,9 @@ user@debian:~/HW-8-01-Git$ git status
 нечего коммитить, нет изменений в рабочем каталоге
 user@debian:~/HW-8-01-Git$ 
 ```
+
+[First commit](https://github.com/netology-code/sys-pattern-homework/commit/a689def8ce68485492107bc5014d272d3246dc5e) 
+
 ---
 
 ### Задание 2
@@ -212,6 +215,8 @@ To github.com:daoyandex/Homework-8-01-Git.git
 user@debian:~/HW-8-01-Git$ 
 
 ```
+[.gitignore commit](https://github.com/netology-code/sys-pattern-homework/commit/1541074284a6f2d384c816a5a8de9aad6ecc0263)
+
 
 ---
 
@@ -302,6 +307,8 @@ To github.com:daoyandex/Homework-8-01-Git.git
 
 user@debian:~/HW-8-01-Git$
 ```
+[network graph](https://github.com/daoyandex/Homework-8-01-Git/network)
+
 ### Задание 4
 
 #### 1: Создайте ветку conflict и переключитесь на неё.
@@ -401,4 +408,7 @@ To github.com:daoyandex/Homework-8-01-Git.git
 
 user@debian:~/HW-8-01-Git$ 
 ```
+
+[network graph](https://github.com/daoyandex/Homework-8-01-Git/network)
+
 ![скрин диаграммы ветки main после задания 4*](img/task4.png)
