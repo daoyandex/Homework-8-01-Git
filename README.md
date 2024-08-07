@@ -27,6 +27,7 @@
 `Приведите ответ в свободной форме........`
 
 ##### 3: after git clone 
+```bash
 user@debian:~$ git clone git@github.com:daoyandex/Homework-8-01-Git.git
 Клонирование в «Homework-8-01-Git»...
 remote: Enumerating objects: 76, done.
@@ -36,16 +37,18 @@ remote: Total 76 (delta 0), reused 2 (delta 0), pack-reused 73
 Получение объектов: 100% (76/76), 3.59 МиБ | 2.17 МиБ/с, готово.
 Определение изменений: 100% (27/27), готово.
 user@debian:~$ 
-
+```
 ##### 6: after clone
+```bash
 user@debian:~/HW-8-01-Git$ git status
 Текущая ветка: main
 Эта ветка соответствует «origin/main».
 
 нечего коммитить, нет изменений в рабочем каталоге
 user@debian:~/HW-8-01-Git$ 
-
+```
 ##### 7, 8: after first modifies README.md
+```bash
 user@debian:~/HW-8-01-Git$ git status
 Текущая ветка: main
 Эта ветка соответствует «origin/main».
@@ -57,8 +60,9 @@ user@debian:~/HW-8-01-Git$ git status
 
 индекс пуст (используйте «git add» и/или «git commit -a»)
 user@debian:~/HW-8-01-Git$  
-
+```
 ##### 9: after diff
+```bash
 user@debian:~/HW-8-01-Git$ git diff
 diff --git a/README.md b/README.md
 index 86ab73c..47d858d 100644
@@ -72,8 +76,9 @@ index 86ab73c..47d858d 100644
  ### Инструкция по выполнению домашнего задания
 user@debian:~/HW-8-01-Git$ git diff --staged
 user@debian:~/HW-8-01-Git$  
-
+```
 ##### 10: after staging README.md
+```bash
 user@debian:~/HW-8-01-Git$ git add README.md
 user@debian:~/HW-8-01-Git$ git status
 Текущая ветка: main
@@ -84,9 +89,10 @@ user@debian:~/HW-8-01-Git$ git status
         изменено:      README.md
 
 user@debian:~/HW-8-01-Git$ 
-
+```
 ##### 11: results of diff & diff --staged
-uuser@debian:~/HW-8-01-Git$ git diff
+```bash
+user@debian:~/HW-8-01-Git$ git diff
 user@debian:~/HW-8-01-Git$ git diff --staged
 diff --git a/README.md b/README.md
 index 86ab73c..47d858d 100644
@@ -99,8 +105,9 @@ index 86ab73c..47d858d 100644
  
  ### Инструкция по выполнению домашнего задания
 user@debian:~/HW-8-01-Git$  
-
+```
 ##### 12. after first commit
+```bash
 user@debian:~/HW-8-01-Git$ git commit -m 'First commit'
 [main a689def] First commit
  1 file changed, 1 insertion(+), 1 deletion(-)
@@ -112,8 +119,9 @@ user@debian:~/HW-8-01-Git$ git status
 
 нечего коммитить, нет изменений в рабочем каталоге
 user@debian:~/HW-8-01-Git$ 
-
+```
 ##### 13. after push to origin/main
+```bash
 user@debian:~/HW-8-01-Git$ git push origin main
 Перечисление объектов: 5, готово.
 Подсчет объектов: 100% (5/5), готово.
@@ -131,12 +139,13 @@ user@debian:~/HW-8-01-Git$ git status
 
 нечего коммитить, нет изменений в рабочем каталоге
 user@debian:~/HW-8-01-Git$ 
-
+```
 ---
 
 ### Задание 2
 
 #### 1: after creating .gitignore
+```bash
 user@debian:~/HW-8-01-Git$ git status
 Текущая ветка: main
 Эта ветка соответствует «origin/main».
@@ -148,8 +157,9 @@ user@debian:~/HW-8-01-Git$ git status
 индекс пуст, но есть неотслеживаемые файлы
 (используйте «git add», чтобы проиндексировать их)
 user@debian:~/HW-8-01-Git$ 
-
+```
 #### 2: after staging .gitignore & it's further modification
+```bash
 user@debian:~/HW-8-01-Git$ git add .gitignore 
 user@debian:~/HW-8-01-Git$ git status 
 Текущая ветка: main
@@ -175,9 +185,10 @@ user@debian:~/HW-8-01-Git$ git status
         новый файл:    .gitignore
 
 user@debian:~/HW-8-01-Git$ 
-
+```
 
 #### 4: after commit & push
+```bash
 user@debian:~/HW-8-01-Git$ git commit -m ".gitignore created & modified"
 [main 1541074] .gitignore created & modified
  1 file changed, 2 insertions(+)
@@ -200,13 +211,14 @@ To github.com:daoyandex/Homework-8-01-Git.git
    a689def..1541074  main -> main
 user@debian:~/HW-8-01-Git$ 
 
-
+```
 
 ---
 
 ### Задание 3
 
 #### 1: after creating new branch & checkout to it
+```bash
 user@debian:~/HW-8-01-Git$ git checkout -b dev
 Переключились на новую ветку «dev»
 
@@ -215,8 +227,10 @@ user@debian:~/HW-8-01-Git$ git status
 нечего коммитить, нет изменений в рабочем каталоге
 
 user@debian:~/HW-8-01-Git$ 
+```
 
 #### 2: after test.sh file creation
+```bash
 user@debian:~/HW-8-01-Git$ git status 
 Текущая ветка: dev
 Неотслеживаемые файлы:
@@ -227,22 +241,25 @@ user@debian:~/HW-8-01-Git$ git status
 (используйте «git add», чтобы проиндексировать их)
 
 user@debian:~/HW-8-01-Git$ 
-
+```
 #### 3: after a few commits and pushes to the dev branch
+```bash
 user@debian:~/HW-8-01-Git$ git log --oneline 
 0416ada (HEAD -> dev, origin/dev) file test.sh is modified with third string echo
 a87ddfa file test.sh is modified with second string echo
 12d7cd2 file test.sh is created
 1541074 (origin/main, origin/HEAD, main) .gitignore created & modified
 a689def First commit
-
+```
 #### 4: after switch to the main branch
+```bash
 user@debian:~/HW-8-01-Git$ git checkout main 
 Переключились на ветку «main»
 Эта ветка соответствует «origin/main».
 user@debian:~/HW-8-01-Git$
-
+```
 #### 5,6,7,8: after all steps
+```bash
 user@debian:~/HW-8-01-Git$ git checkout main 
 Переключились на ветку «main»
 Эта ветка соответствует «origin/main».
@@ -284,17 +301,20 @@ To github.com:daoyandex/Homework-8-01-Git.git
    3561142..e264996  main -> main
 
 user@debian:~/HW-8-01-Git$
-
+```
 ### Задание 4
 
 #### 1: Создайте ветку conflict и переключитесь на неё.
+```bash
 user@debian:~/HW-8-01-Git$ git checkout -b conflict
 Переключились на новую ветку «conflict»
-
+```
 #### 2: Внесите изменения в файл test.sh.
+```bash
 user@debian:~/HW-8-01-Git$ nano test.sh 
-
+```
 #### 3: Сделайте коммит и пуш.
+```bash
 user@debian:~/HW-8-01-Git$ git add test.sh 
 
 user@debian:~/HW-8-01-Git$ git commit -m "File test.sh has been modified in the conflict branch"
@@ -315,16 +335,19 @@ remote:      https://github.com/daoyandex/Homework-8-01-Git/pull/new/conflict
 remote: 
 To github.com:daoyandex/Homework-8-01-Git.git
  * [new branch]      conflict -> conflict
-
+```
 #### 4: Переключитесь на основную ветку.
+```bash
 user@debian:~/HW-8-01-Git$ git checkout main 
 Переключились на ветку «main»
 Эта ветка соответствует «origin/main».
-
+```
 #### 5: Измените ту же самую строчку в файле test.sh.
+```bash
 user@debian:~/HW-8-01-Git$ nano test.sh 
-
+```
 #### 6: Сделайте коммит и пуш.
+```bash
 user@debian:~/HW-8-01-Git$ git add test.sh 
 
 user@debian:~/HW-8-01-Git$ git commit -m "File test.sh has beem modified in the same string like at the conflict branch"
@@ -341,9 +364,9 @@ user@debian:~/HW-8-01-Git$ git push origin main
 remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
 To github.com:daoyandex/Homework-8-01-Git.git
    e264996..382b5c4  main -> main
-
+```
 #### 7: Сделайте мердж ветки conflict в основную ветку и решите конфликт так, чтобы в результате в файле оказался код из ветки conflict.
-
+```bash
 user@debian:~/HW-8-01-Git$ git merge conflict 
 Автослияние test.sh
 КОНФЛИКТ (содержимое): Конфликт слияния в test.sh
@@ -377,5 +400,5 @@ To github.com:daoyandex/Homework-8-01-Git.git
    382b5c4..a2bd6bb  main -> main
 
 user@debian:~/HW-8-01-Git$ 
-
+```
 ![скрин диаграммы ветки main после задания 4*](img/task4.png)
